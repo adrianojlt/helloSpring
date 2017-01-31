@@ -20,4 +20,14 @@ public class HelloWorldController {
         model.addAttribute("greeting", "Hello World Again, from Spring 4 MVC");
         return "welcome";
     }
+
+    @RequestMapping(value="/first", method = RequestMethod.GET)
+    public String first(ModelMap model) {
+        return "first";
+    }
+
+    @RequestMapping(value="/secound", method = RequestMethod.GET)
+    public String secound(ModelMap model) {
+        return "first";
+    }
 }

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:th="http://www.thymeleaf.org" >
+    <head>
+        <title>Spring MVC Example</title>
+    </head>
+    <body>
+       	<div th:include="fragments/header::head"></div>
+    
+        <h1>Welcome!</h1>
+        <p>Click <a th:href="@{/first}">here</a> to advance to the first page.</p>
+
+    </body>
+</html>

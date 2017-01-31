@@ -32,8 +32,18 @@
         <url-pattern>welcome.html</url-pattern>
         <url-pattern>*.htm</url-pattern>
         -->
-        <url-pattern>/</url-pattern> <!-- make this the default servlet for web application -->
+        <url-pattern>/smvc/*</url-pattern> <!-- make this the default servlet for web application -->
 
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>ArenaServlet</servlet-name>
+    	<servlet-class>pt.adrz.hellospring.controllers.ArenaServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>ArenaServlet</servlet-name>
+        <url-pattern>/arena/*</url-pattern> 
     </servlet-mapping>
 
 	<!--
